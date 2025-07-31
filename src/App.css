@@ -1,0 +1,6 @@
+.app-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background-color: #f9fafb;
+}
