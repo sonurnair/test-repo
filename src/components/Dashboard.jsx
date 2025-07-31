@@ -9,7 +9,8 @@ import {
   ChevronLeft,
   ChevronRight,
   RefreshCcw,
-  ChevronDown
+  ChevronDown,
+  Menu
 } from "lucide-react";
 import { leads } from "../data/DummyData";
 import "./Dashboard.css";
@@ -40,6 +41,7 @@ const Dashboard = () => {
     <div className="dashboard">
       {/* Topbar */}
       <div className="topbar">
+        <Menu size={20} className="menu-icon" />
         <div className="searchbar">
           <Search size={16} />
           <input type="text" placeholder="Search" />

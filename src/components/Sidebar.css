@@ -1,3 +1,4 @@
+/* Sidebar */
 .sidebar {
   width: 72px;
   background-color: #fff;
@@ -9,9 +10,14 @@
   padding: 16px 0;
   height: 100vh;
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
-.sidebar-top {
+.sidebar-top,
+.sidebar-bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,9 +30,8 @@
   color: #2563eb;
 }
 
-.sidebar-icons {
-  display: flex;
-  flex-direction: column;
+.sidebar-icons,
+.sidebar-bottom {
   gap: 8px;
 }
 
@@ -51,9 +56,9 @@
   color: #2563eb;
 }
 
-.sidebar-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 56px;
+  }
 }
